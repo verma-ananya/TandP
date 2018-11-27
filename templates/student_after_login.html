@@ -1,0 +1,23 @@
+{% extends 'after_login_base.html' %}
+
+{% block stylesheet %}
+{% endblock %}
+
+{% block content %}
+<div class="container" style="margin-top:150px;">
+		<h2 class="display-3" style="margin-bottom: 30px; text-align: center"></h2>
+		<div class="container" style="min-height:200px;">
+		<h2 align="center">Important Links</h2>	
+ 	<h3>
+ 		<a href="#" target="_blank">https://www.editcvbuilder.com/</a>
+ 	</h3>
+ 	</div>
+ 	{% for project in projects %}
+    <div>
+        <p>published: {{ project.published_date }}</p>
+        <h2><a href="">{{ project.title }}</a></h2>
+        <p>{{ project.text|linebreaksbr }}</p>
+    </div>
+    {% endfor %}
+ </div>
+{% endblock %}

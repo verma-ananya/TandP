@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{% block title %}Training and Career Cell, IIIT Naya Raipur{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  </head>
+<body>
+<div class="container">
+	<! ------------Navbar ------------------->	
+	<div id="nav_container" >
+		<div id="iiit_logo_container">
+			<img src="{% static 'images/logo.png'%}" alt="IIIT logo" width="99" height="99" id="logo">
+			
+		</div>	
+		<div id="TC_Head">
+			<h1 style="color :white" >Training and Career Cell |</h1>
+		</div>
+		<div id="IIIT_name">
+			<h3>International Institute of Information Technology , Naya Raipur <br> A joint initiative of NTPC and CG Govt.</h3>
+		</div>
+		
+		<div id="logo_name" style="background-color:#43536A">
+			<?---------about------------->
+			<div class="dropdown">
+    			<button class="dropbtn" id="abt">About </button>
+    			<div class="dropdown-content">
+      			<a href="#">Link 1</a>
+      			<a href="#">Link 2</a>
+      			<a href="#">Link 3</a>
+    		</div>
+  		</div> 	
+
+  		<?---------for recruiters------------->
+		<div class="dropdown">
+    		<button class="dropbtn" id="fr">For Recruiters </button>
+    		<div class="dropdown-content">
+      		<a href="#">Link 1</a>
+      		<a href="#">Link 2</a>
+      		<a href="#">Link 3</a>
+    		</div>
+  		</div> 
+
+  		<?---------for students------------->
+		<div class="dropdown">
+    		<button class="dropbtn" id="fs">For Students </button>
+    		<div class="dropdown-content">
+      		<a href="#">Link 1</a>
+      		<a href="#">Link 2</a>
+      		<a href="#">Link 3</a>
+    		</div>
+  		</div> 
+
+  		<?---------Industry------------->
+		<div class="dropdown">
+    		<button class="dropbtn" id="ind">Industry </button>
+    		<div class="dropdown-content">
+      		<a href="#">Link 1</a>
+      		<a href="#">Link 2</a>
+      		<a href="#">Link 3</a>
+    		</div>
+  		</div> 
+
+  		<?---------Contact Us------------->
+		<div class="dropdown">
+    		<button class="dropbtn" id="cu">Contact Us </button>
+    		<div class="dropdown-content">
+      		<a href="#">Link 1</a>
+      		<a href="#">Link 2</a>
+      		<a href="#">Link 3</a>
+    		</div>
+  		</div> 
+
+	</div>
+	<div id="orange_strip">
+		.
+	</div>
+
+
+</div>
+{% block content %}
+{%endblock %}
+</body>
+</html>
